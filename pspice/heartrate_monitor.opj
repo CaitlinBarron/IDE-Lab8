@@ -1,0 +1,112 @@
+(ExpressProject "heartrate_monitor"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\heartrate_monitor.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\heartrate_monitor-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\heartrate_monitor-pspicefiles\simulate\simulate.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\heartrate_monitor-pspicefiles\schematic1\stage1.sim"
+        (DisplayName "SCHEMATIC1-stage1")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\heartrate_monitor-pspicefiles\simulate\sim.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\heartrate_monitor-pspicefiles\simulate\sim.sim"
+        (DisplayName "simulate-sim")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    ("DIODE SCHOTTKY"
+      (FullPartName "DIODE SCHOTTKY.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (OPB701AL
+      (FullPartName "OPB701AL.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (OPB701
+      (FullPartName "OPB701.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "Caitlin")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Caitlin\Google Drive\College\fourth Year\Spring 2019\IDE\Lab 8\pspice\heartrate_monitor.dsn")
+      (Path "Design Resources"
+         "C:\Users\Caitlin\Google Drive\College\fourth Year\Spring 2019\IDE\Lab 8\pspice\heartrate_monitor.dsn"
+         "simulate")
+      (Path "Design Resources"
+         "C:\Users\Caitlin\Google Drive\College\fourth Year\Spring 2019\IDE\Lab 8\pspice\heartrate_monitor.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\Caitlin\Google Drive\College\fourth Year\Spring 2019\IDE\Lab 8\pspice\heartrate_monitor.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 326"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 588 130 512")
+        (Scroll "0 40")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\CAITLIN\GOOGLE DRIVE\COLLEGE\FOURTH YEAR\SPRING 2019\IDE\LAB 8\PSPICE\HEARTRATE_MONITOR.DSN")
+      (Schematic "simulate")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 78 698 78 429")
+        (Scroll "-285 60")
+        (Zoom "106"))
+      (Path
+         "C:\USERS\CAITLIN\GOOGLE DRIVE\COLLEGE\FOURTH YEAR\SPRING 2019\IDE\LAB 8\PSPICE\HEARTRATE_MONITOR.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

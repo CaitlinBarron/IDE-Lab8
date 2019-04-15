@@ -1,0 +1,61 @@
+
+**** 04/10/19 17:07:52 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-stage1"  [ C:\Users\Caitlin\Google Drive\College\fourth Year\Spring 2019\IDE\Lab 8\pspice\heartrate_monitor-
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "stage1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Caitlin\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 150 1 1000000
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source HEARTRATE_MONITOR
+.EXTERNAL OUTPUT Vout
+V_V1         N00138 0 5Vdc
+R_Rf         N00196 N00138  82.5 TC=0,0 
+R_RL         N00130 N00138  20k TC=0,0 
+X_U2         N00130 N01708 N03748 0 N01708 uA741
+C_C1         N01708 N01824  1n  TC=0,0 
+R_R1         N01831 N01824  1k TC=0,0 
+R_R2         N02399 N01824  1k TC=0,0 
+C_C2         N01831 N02399  1n  TC=0,0 
+X_U3         N02399 N02406 N03617 0 N02431 uA741
+R_R3         N02431 N02406  1k TC=0,0 
+R_R4         N02406 N01831  1k TC=0,0 
+V_V2         N03617 0 5Vdc
+X_U4         N02997 N01831 V+ V- N01831 uA741
+R_R5         N02997 N00138  100k TC=0,0 
+R_R6         0 N02997  100k TC=0,0 
+V_V3         N03748 0 5Vdc
+R_R7         VOUT N02431  100 TC=0,0 
+V_V4         N038171 0 2.9Vdc
+V_V5         N038430 0 0.4Vdc
+
+**** RESUMING stage1.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N00196.
+
+ERROR(ORPSIM-15141): Less than 2 connections at node VOUT.
+
